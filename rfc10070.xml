@@ -496,7 +496,7 @@
       <section anchor="MediaReg">
         <name>Media Type Registration</name>
         <t>
-          This section registers the following media type <xref target="RFC2046"/>
+          IANA has registered the following media type <xref target="RFC2046"/>
           in the "Media Types" registry <xref target="IANA.MediaTypes"/>
           in the manner described in <xref target="RFC6838"/>.
         </t>
@@ -538,18 +538,18 @@
       <section anchor="MethodsReg">
         <name>OAuth Token Endpoint Authentication Methods</name>
         <t>
-          This section updates entries in the "OAuth Token Endpoint Authentication Methods" registry of <xref target="IANA.OAuthParameters"/>
+          IANA has updated the following entries in the "OAuth Token Endpoint Authentication Methods" registry of <xref target="IANA.OAuthParameters"/>.
         </t>
         <section anchor="MethodsContents">
           <name>Registry Contents</name>
-          <dl spacing="normal" newline="false">
+          <dl spacing="compact" newline="false">
             <dt>Token Endpoint Authentication Method Name:</dt><dd>private_key_jwt</dd>
-            <dt>Change Controller:</dt><dd>IETF</dd>
+            <dt>Change Controller:</dt><dd>IESG</dd>
             <dt>Reference:</dt><dd>Section 9 of <xref target="OpenID.Core"/>, RFC 10070</dd>
           </dl>
-          <dl spacing="normal" newline="false">
+          <dl spacing="compact" newline="false">
             <dt>Token Endpoint Authentication Method Name:</dt><dd>client_secret_jwt</dd>
-            <dt>Change Controller:</dt><dd>IETF</dd>
+            <dt>Change Controller:</dt><dd>IESG</dd>
             <dt>Reference:</dt><dd>Section 9 of <xref target="OpenID.Core"/>, RFC 10070</dd>
           </dl>
         </section>

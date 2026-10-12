@@ -413,8 +413,8 @@ Table of Contents
 
 8.1.  Media Type Registration
 
-   This section registers the following media type [RFC2046] in the
-   "Media Types" registry [IANA.MediaTypes] in the manner described in
+   IANA has registered the following media type [RFC2046] in the "Media
+   Types" registry [IANA.MediaTypes] in the manner described in
    [RFC6838].
 
 8.1.1.  Registry Contents
@@ -466,21 +466,17 @@ Table of Contents
 
 8.2.  OAuth Token Endpoint Authentication Methods
 
-   This section updates entries in the "OAuth Token Endpoint
-   Authentication Methods" registry of [IANA.OAuthParameters]
+   IANA has updated the following entries in the "OAuth Token Endpoint
+   Authentication Methods" registry of [IANA.OAuthParameters].
 
 8.2.1.  Registry Contents
 
    Token Endpoint Authentication Method Name:  private_key_jwt
-
-   Change Controller:  IETF
-
+   Change Controller:  IESG
    Reference:  Section 9 of [OpenID.Core], RFC 10070
 
    Token Endpoint Authentication Method Name:  client_secret_jwt
-
-   Change Controller:  IETF
-
+   Change Controller:  IESG
    Reference:  Section 9 of [OpenID.Core], RFC 10070
 
 8.3.  OAuth URI Registration Updates
