@@ -327,6 +327,7 @@
       <t>
 	  In the same section, the JWT Claims Set example is replaced by:
       </t>
+		<blockquote>
       <figure anchor="JWTClaims">
         <name>Example JWT Claims Set</name>
         <artwork><![CDATA[
@@ -340,6 +341,7 @@
   }
 ]]></artwork>
       </figure>
+		</blockquote>
       <t>
 	In the list of agreements required by participants
 	in <xref section="5" target="RFC7523"/> (Interoperability Considerations),
