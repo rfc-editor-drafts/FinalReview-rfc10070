@@ -102,7 +102,7 @@ Table of Contents
    tokens sent to OAuth 2.0 authorization servers.  Section 3.3 of
    [RFC8414] requires that the client having retrieved the metadata
    validates the returned issuer value.  Other endpoint values of the
-   metadata cannot be directly validated and, if used as audience when
+   metadata cannot be directly validated and, if used as the audience when
    sent to a different endpoint, can open an attack vector.
 
    A general description of the updates made is to require that the
