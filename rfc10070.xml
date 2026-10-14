@@ -143,11 +143,11 @@
 		<dt>Audience</dt>
 		<dd>A value that identifies the party or parties intended to process
       the assertion.  The URL of the token endpoint, as defined in Section
-      <xref section="3.2" target="RFC6749" format="bare"/> of OAuth 2.0 <xref target="RFC6749"/>, can be used to indicate that
+      <xref section="3.2" target="RFC6749" sectionFormat="bare"/> of OAuth 2.0 <xref target="RFC6749"/>, can be used to indicate that
       the authorization server is a valid intended audience of the
       assertion.  In the absence of an application profile specifying
       otherwise, compliant applications MUST compare the Audience values
-      using the Simple String Comparison method defined in Section <xref section="6.2.1" target="RFC3986" format="bare"/>
+      using the Simple String Comparison method defined in Section <xref section="6.2.1" target="RFC3986" sectionFormat="bare"/>
       of RFC 3986 <xref target="RFC3986"/>.
 		</dd>
 	  </dl>
