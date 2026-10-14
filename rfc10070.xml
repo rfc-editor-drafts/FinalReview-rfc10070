@@ -138,8 +138,8 @@
 	is replaced as follows:
       </t>
 	<t>OLD:</t>
+		<dl newline="true" spacing="normal">
 		<blockquote>
-      <dl newline="true" spacing="normal">
 		<dt>Audience</dt>
 		<dd>A value that identifies the party or parties intended to process
       the assertion.  The URL of the token endpoint, as defined in Section
