@@ -732,18 +732,6 @@
 			</front>
 				<refcontent>World Wide Web Consortium Recommendation REC-html401-19991224</refcontent>
 			</reference>
-
-		<reference anchor="OASIS.saml-core-2.0-os" target="https://docs.oasis-open.org/security/saml/v2.0/saml-core-2.0-os.pdf">
-			<front>
-				<title>Metadata for the OASIS Security Assertion Markup Language (SAML) V2.0</title>
-				<author fullname="Scott Cantor" initials="S." surname="Cantor" role="editor"/>
-				<author fullname="John Kemp" initials="J." surname="Kemp" role="editor"/>
-				<author fullname="Rob Philpott" initials="R." surname="Philpott" role="editor"/>
-				<author fullname="Eve Maler" initials="E." surname="Maler" role="editor"/>
-				<date month="March" day="15" year="2005"/>
-			</front>
-			<refcontent>OASIS Standard saml-metadata-2.0-os</refcontent>
-		</reference>
 		  
         <reference anchor="Audience.Injection" target="https://eprint.iacr.org/2025/629">
           <front>
