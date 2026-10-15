@@ -177,9 +177,39 @@
       <t>
 	The text and example in <xref section="2.2" target="RFC7522"/>
 	(Using SAML Assertions for Client Authentication)
-	is replaced by:
+	is replaced as follows:
       </t>
+<t>OLD:</t>
+<blockquote>
+<t>To use a SAML Bearer Assertion for client authentication, the client
+   uses the following parameter values and encodings.<t>
+<t>The value of the "client_assertion_type" parameter is
+   "urn:ietf:params:oauth:client-assertion-type:saml2-bearer".</t>
+<t>The value of the "client_assertion" parameter MUST contain a single
+   SAML 2.0 Assertion.  The SAML Assertion XML data MUST be encoded
+   using base64url, where the encoding adheres to the definition in Section
+   <xref target="RFC4648" sectionFormat="bare" section="5"/> of RFC 4648 <xref target="RFC4648"/> and where the padding bits are set to
+   zero.  To avoid the need for subsequent encoding steps (by
+   "application/x-www-form-urlencoded" <xref target="W3C.REC-html401-19991224"/>, for
+   example), the base64url-encoded data SHOULD NOT be line wrapped and
+   pad characters ("=") SHOULD NOT be included.</t>
+<t>The following example demonstrates a client authenticating using an
+   Assertion during the presentation of an authorization code grant in
+   an access token request (with extra line breaks for display purposes
+   only):</t>
+<sourcecode>
+	     POST /token.oauth2 HTTP/1.1
+     Host: as.example.com
+     Content-Type: application/x-www-form-urlencoded
 
+     grant_type=authorization_code&
+     code=n0esc3NRze7LTCu7iYzS6a5acc3f0ogp4&
+     client_assertion_type=urn%3Aietf%3Aparams%3Aoauth
+     %3Aclient-assertion-type%3Asaml2-bearer&
+     client_assertion=PHNhbW...[omitted for brevity]...ZT
+</sourcecode>
+</blockquote>
+<t>NEW:</t>
       <blockquote><t>
 	    SAML Bearer Assertions
 	    <bcp14>MUST NOT</bcp14> be used for client authentication for any new applications.
@@ -195,8 +225,29 @@
       <t>
 	The description of the Audience element in Item 2 of
 	<xref section="3" target="RFC7522"/> (Assertion Format and Processing Requirements)
-	is replaced by:
+	is replaced as follows:
       </t>
+<t>OLD:</t>
+		<blockquote><t>The Assertion <bcp14>MUST</bcp14> contain a &lt;Conditions&gt; element with an
+        &lt;AudienceRestriction&gt; element with an &lt;Audience&gt; element that
+        identifies the authorization server as an intended audience.
+        Section 2.5.1.4 of "Assertions and Protocols for the OASIS
+        Security Assertion Markup Language (SAML) V2.0"
+        <xref target="OASIS.saml-core-2.0-os"/> defines the &lt;AudienceRestriction&gt; and
+        &lt;Audience&gt; elements and, in addition to the URI references
+        discussed there, the token endpoint URL of the authorization
+        server MAY be used as a URI that identifies the authorization
+        server as an intended audience.  The authorization server MUST
+        reject any Assertion that does not contain its own identity as
+        the intended audience.  In the absence of an application profile
+        specifying otherwise, compliant applications MUST compare the
+        Audience values using the Simple String Comparison method
+        defined in Section <xref target=RFC3986" sectionFormat="bare" section="6.2.1"/> of RFC 3986 <xref target="RFC3986"/>.  As noted in
+        <eref target="https://www.rfc-editor.org/info/rfc7522/#section-5">Section 5</eref>, the precise strings to be used as the Audience for a
+        given authorization server must be configured out of band by the
+        authorization server and the issuer of the Assertion.
+
+<t>NEW:</t>
       <blockquote><t>
 	    The Assertion <bcp14>MUST</bcp14> contain a &lt;Conditions&gt; element
 	    with an &lt;AudienceRestriction&gt; element
@@ -668,7 +719,32 @@
       <references>
         <name>Informative References</name>
         <xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.2046.xml"/>
+		<xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.4648.xml"/>
         <xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.6838.xml"/>
+
+		<reference anchor="W3C.REC-html401-19991224" target="https://www.w3.org/TR/1999/REC-html401-19991224/">
+			<front>
+				<title>HTML 4.01 Specification</title>
+				<author fullname="Dave Ragget" initials="D." surname="Ragget" role="editor"/>
+				<author fullname="Arnaud Le Hors" initials="A." surname="Hors" role="editor"/>
+				<author fullname="Ian Jacobs" initials="I." surname="Jacobs" role="editor"/>
+				<date month="December" year="1999"/>
+			</front>
+				<refcontent>World Wide Web Consortium Recommendation REC-html401-19991224</refcontent>
+			</reference>
+
+		<reference anchor="OASIS.saml-core-2.0-os" target="https://docs.oasis-open.org/security/saml/v2.0/saml-core-2.0-os.pdf">
+			<front>
+				<title>Metadata for the OASIS Security Assertion Markup Language (SAML) V2.0</title>
+				<author fullname="Scott Cantor" initials="S." surname="Cantor" role="editor"/>
+				<author fullname="John Kemp" initials="J." surname="Kemp" role="editor"/>
+				<author fullname="Rob Philpott" initials="R." surname="Philpott" role="editor"/>
+				<author fullname="Eve Maler" initials="E." surname="Maler" role="editor"/>
+				<date month="March" day="15" year="2005"/>
+			</front>
+			<refcontent>OASIS Standard saml-metadata-2.0-os</refcontent>
+		</reference>
+		  
         <reference anchor="Audience.Injection" target="https://eprint.iacr.org/2025/629">
           <front>
             <title>Audience Injection Attacks: A New Class of Attacks on Web-Based Authorization and Authentication Standards</title>
