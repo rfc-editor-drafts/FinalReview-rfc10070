@@ -124,7 +124,7 @@
         </t>
       </section>
     </section>
-    <section anchor="RFC7521Updates">
+    <section anchor="RFC7521Udates">
       <name>Updates to RFC 7521</name>
       <t>
 	This section updates
@@ -135,7 +135,7 @@
       <t>
 	The description of the Audience parameter
 	in <xref section="5.1" target="RFC7521"/> (Assertion Metamodel)
-	is replaced as follows:
+	is replaced as follows.
       </t>
 	<t>OLD:</t>
 	<blockquote>
@@ -177,7 +177,7 @@
       <t>
 	The text and example in <xref section="2.2" target="RFC7522"/>
 	(Using SAML Assertions for Client Authentication)
-	is replaced as follows:
+	is replaced as follows.
       </t>
 <t>OLD:</t>
 <blockquote>
@@ -225,7 +225,7 @@ client_assertion=PHNhbW...[omitted for brevity]...ZT
       <t>
 	The description of the Audience element in Item 2 of
 	<xref section="3" target="RFC7522"/> (Assertion Format and Processing Requirements)
-	is replaced as follows:
+	is replaced as follows.
       </t>
 <t>OLD:</t>
 		<blockquote><t>The Assertion <bcp14>MUST</bcp14> contain a &lt;Conditions&gt; element with an
