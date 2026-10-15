@@ -516,6 +516,7 @@ client_assertion=PHNhbW...[omitted for brevity]...ZT
 			facilitate interoperability, the authorization server MUST accept its issuer identifier, token endpoint URL, 
 			or pushed authorization request endpoint URL as values that identify it as an intended audience.</t></blockquote>			
       <blockquote>
+<t>NEW:</t>
           <t>
 	    Due to historical reasons, there is potential ambiguity regarding
 	    the appropriate audience value to use when employing
