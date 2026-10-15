@@ -504,9 +504,17 @@ client_assertion=PHNhbW...[omitted for brevity]...ZT
 	The last paragraph in <xref section="2" target="RFC9126"/>
 	(Pushed Authorization Request Endpoint),
 	which describes the audience value,
-	is replaced by:
+	is replaced as follows.
       </t>
-
+<t>OLD:</t>
+		<blockquote>
+<t>Due to historical reasons, there is potential ambiguity regarding the appropriate audience 
+			value to use when employing JWT client assertion-based authentication (defined 
+			in <xref target="RFC7523" sectionFormat="of" section="2.2"/> with private_key_jwt or client_secret_jwt authentication 
+			method names per Section 9 of <xref target="OpenID.Core"/>). To address that ambiguity, the issuer identifier URL of the 
+			authorization server according to <xref target="RFC8414"/> SHOULD be use as the value of the audience. In order to 
+			facilitate interoperability, the authorization server MUST accept its issuer identifier, token endpoint URL, 
+			or pushed authorization request endpoint URL as values that identify it as an intended audience.</t></blockquote>			
       <blockquote>
           <t>
 	    Due to historical reasons, there is potential ambiguity regarding
