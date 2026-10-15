@@ -368,9 +368,9 @@ client_assertion=PHNhbW...[omitted for brevity]...ZT
       </blockquote>
       <t>
 	In <xref section="4" target="RFC7523"/> (Authorization Grant Example),
-	the sentence:
+	the sentence below is replaced as follows.
       </t>
-
+<t>OLD:</t>
       <blockquote>
           <t>
 	    The intended audience of the JWT is
@@ -378,9 +378,7 @@ client_assertion=PHNhbW...[omitted for brevity]...ZT
 	    identifier with which the authorization server identifies itself.
           </t>
       </blockquote>
-      <t>
-	is replaced by:
-      </t>
+      <t>NEW:</t>
 
       <blockquote>
           <t>
@@ -391,8 +389,20 @@ client_assertion=PHNhbW...[omitted for brevity]...ZT
       </blockquote>
 
       <t>
-	  In the same section, the JWT Claims Set example is replaced by:
+	  In the same section, the JWT Claims Set example is replaced as follows.
       </t>
+<t>OLD:</t>
+		<blockquote>
+			<artwork><![CDATA[
+	  {"iss":"https://jwt-idp.example.com",
+      "sub":"mailto:mike@example.com",
+      "aud":"https://jwt-rp.example.net",
+      "nbf":1300815780,
+      "exp":1300819380,
+      "http://claims.example.com/member":true}
+]]></artwork>
+		</blockquote>
+<t>NEW:</t>		
 		<blockquote>
       <figure anchor="JWTClaims">
         <name>Example JWT Claims Set</name>
