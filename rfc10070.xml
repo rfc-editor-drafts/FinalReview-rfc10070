@@ -420,7 +420,7 @@ client_assertion=PHNhbW...[omitted for brevity]...ZT
 		</blockquote>
       <t>
 	In the list of agreements required by participants
-	in <xref section="5" target="RFC7523"/> (Interoperability Considerations),
+	in <xref target="RFC7523" sectionFormat="of" section="5"/> (Interoperability Considerations),
 	an agreement on "audience identifiers" is no longer needed
 	for client authentication JWTs.
       </t>
